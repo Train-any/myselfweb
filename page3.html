@@ -89,6 +89,33 @@
             margin-right: 20px; /* 右侧边距 */
         }
 
+        /* 超链接方块 */
+        .link-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap; /* 使得链接方块在小屏幕下换行 */
+        }
+
+        .link-box {
+            background-color: #FFFFFF; /* 方块的背景色为白色 */
+            border-radius: 15px;
+            padding: 20px;
+            width: 15%;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 10px;
+        }
+
+        /* 方块鼠标悬停时的效果：放大和阴影 */
+        .link-box:hover {
+            transform: scale(1.1); /* 放大效果 */
+            box-shadow: 0 0 15px rgba(0, 0, 255, 0.5); /* 蓝色阴影效果 */
+        }
+
         /* 底部区域 */
         footer {
             background-color: #1E90FF;
@@ -188,18 +215,27 @@
         </div>
     </div>
 
+    <!-- 超链接方块 -->
+    <div class="link-container">
+        <a href="page1.html" class="link-box">月姬</a>
+        <a href="page2.html" class="link-box">空之境界</a>
+        <a href="page3.html" class="link-box">魔法使之夜</a>
+        <a href="page4.html" class="link-box">Fate系列</a>
+        <a href="page5.html" class="link-box">关于制作者</a>
+    </div>
+
     <!-- 网站底部 -->
     <footer>
         <div class="footer-left">个人制作—感谢访问</div>
         <div class="footer-center">
             <a href="https://leggggend.github.io/freshmanweclass/" target="_blank">返回班级</a>
             <br>
-            <a href="https://leggg" target="_blank">返回寝室</a>
+            <a href="https://train-any.github.io/room110/" target="_blank">返回寝室</a>
         </div>
         <div class="audio-player-container">
             <div class="audio-tip">手动点击播放音乐~</div>
             <audio controls autoplay>
-                <source src="img/music.mp3" type="audio/mp3">
+                <source src="img/魔法使いの夜～メインテーマ-深澤秀行.mp3" type="audio/mp3">
                 您的浏览器不支持音频标签。
             </audio>
         </div>
